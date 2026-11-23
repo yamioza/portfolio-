@@ -1,0 +1,917 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Syed Sarfaraz Hussain Zaidi — Design & Prototyping Portfolio</title>
+  <meta name="description" content="Portfolio of Syed Sarfaraz Hussain Zaidi — Design enthusiast exploring the fundamentals of product design, digital fabrication, kinetic computing, and rapid prototyping.">
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+  
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-theme="dark">
+
+  <!-- Ambient Light Accents -->
+  <div class="ambient-glow glow-cyan"></div>
+  <div class="ambient-glow glow-yellow"></div>
+
+  <!-- Navigation Bar -->
+  <header class="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="nav-brand">
+        <span class="brand-badge">SZ</span>
+        <span class="brand-name">Sarfaraz <span class="brand-sub">/ D-lite</span></span>
+      </a>
+
+      <nav class="nav-menu" id="navMenu">
+        <a href="#about" class="nav-link">About</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#exploration" class="nav-link">Digital Exploration</a>
+        <a href="#toolbox" class="nav-link">Toolbox</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <!-- Sound FX Toggle -->
+        <button id="soundToggle" class="btn-icon" title="Toggle Tactile Sounds" aria-label="Toggle Sound Effects">
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
+            <path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"></path>
+          </svg>
+        </button>
+
+        <!-- Theme Toggle -->
+        <button id="themeToggle" class="btn-icon" title="Toggle Theme" aria-label="Toggle Theme">
+          <svg class="icon moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+          <svg class="icon sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+        </button>
+
+        <a href="#projects" class="btn btn-sm btn-primary">Explore Work</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section id="hero" class="hero-section">
+      <div class="container hero-grid">
+        
+        <!-- Left: Intro Copy -->
+        <div class="hero-content">
+          <div class="status-pill">
+            <span class="status-dot"></span>
+            <span>Currently Prototyping &bull; Fab Academy Exploration</span>
+          </div>
+
+          <h1 class="hero-title">
+            Hi, I’m <span class="gradient-text">Syed Sarfaraz Hussain Zaidi</span>
+          </h1>
+
+          <p class="hero-role">
+            <span class="role-highlight">Design Enthusiast</span> &amp; <span class="role-highlight">Hardware Explorer</span>
+          </p>
+
+          <p class="hero-lead">
+            Passionate about learning the fundamentals of producing and prototyping. I spend my days uncovering mechanical kinematics, custom electronics, and tactile forms — then <em>go back home and work on my ideas</em>.
+          </p>
+
+          <!-- Core Philosophy Callout -->
+          <blockquote class="hero-quote">
+            <div class="quote-bar"></div>
+            <p>“Bridging 2D ergonomics, custom PCB milling, and kinetic mechanisms into tangible products.”</p>
+          </blockquote>
+
+          <div class="hero-cta-group">
+            <a href="#pocket-rocket" class="btn btn-primary">
+              <span>View Flagship: Pocket Rocket</span>
+              <svg class="btn-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </a>
+            <a href="#gestulator" class="btn btn-secondary">
+              <span>Try Gestulator Sim</span>
+            </a>
+            <a href="https://brick-era-0b8.notion.site/Week-1-Principles-Practices-Digital-Exploration-41c4243c7bad806cad31f09661c93367" target="_blank" rel="noopener" class="btn btn-ghost">
+              <svg class="icon-inline" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                <polyline points="15 3 21 3 21 9"></polyline>
+                <line x1="10" y1="14" x2="21" y2="3"></line>
+              </svg>
+              <span>Notion Doc</span>
+            </a>
+          </div>
+
+          <!-- Quick Stat Tickers -->
+          <div class="hero-stats">
+            <div class="stat-card">
+              <span class="stat-num">03+</span>
+              <span class="stat-label">Hardware Concepts</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-num">W01</span>
+              <span class="stat-label">Digital Fabrication Log</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-num">100%</span>
+              <span class="stat-label">Hands-On Iteration</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: Interactive Hero Photo & Profile Card -->
+        <div class="hero-photo-container">
+          <div class="profile-card glass-panel">
+            <div class="profile-badge-top">
+              <span class="chip chip-cyan">Designer &amp; Maker</span>
+              <span class="chip chip-yellow">Hardware Prototyper</span>
+            </div>
+
+            <!-- Profile Media Wrapper -->
+            <div class="photo-wrapper" id="photoWrapper">
+              <!-- Default Aesthetic Visual Avatar -->
+              <div class="default-avatar" id="defaultAvatar">
+                <div class="avatar-shapes">
+                  <div class="shape-circle"></div>
+                  <div class="shape-ring"></div>
+                  <div class="shape-dot"></div>
+                </div>
+                <div class="avatar-initials">SZ</div>
+                <div class="avatar-tag">SYED SARFARAZ</div>
+              </div>
+              
+              <!-- User Uploaded Photo Target -->
+              <img id="userHeroPhoto" class="hero-img-element hidden" alt="Syed Sarfaraz Hussain Zaidi" />
+              
+              <!-- Hover Overlay to upload/change photo -->
+              <div class="photo-action-overlay">
+                <label for="photoUploadInput" class="btn-change-photo" title="Upload your hero photo">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"></path>
+                    <circle cx="12" cy="13" r="4"></circle>
+                  </svg>
+                  <span id="photoBtnLabel">Upload Your Photo</span>
+                </label>
+                <input type="file" id="photoUploadInput" accept="image/*" class="sr-only">
+                <button type="button" id="resetPhotoBtn" class="btn-reset-photo hidden" title="Reset to default graphic">Reset</button>
+              </div>
+            </div>
+
+            <!-- Profile Details Bar -->
+            <div class="profile-meta">
+              <div class="meta-row">
+                <span class="meta-name">Syed Sarfaraz Hussain Zaidi</span>
+                <span class="meta-location">Hyderabad / India</span>
+              </div>
+              <p class="meta-bio">
+                Exploring digital fabrication, tendon-driven animatronics, custom PCB architecture, and retro handheld industrial design.
+              </p>
+              <div class="tech-tags">
+                <span class="tag">3D CAD / Fusion</span>
+                <span class="tag">PCB Milling</span>
+                <span class="tag">Kinematics</span>
+                <span class="tag">C++ / Firmware</span>
+                <span class="tag">Miro Ideation</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- About & Design Philosophy Section -->
+    <section id="about" class="section about-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">About &bull; Ethos</span>
+          <h2 class="section-title">Turning Ideas into Tangible Products</h2>
+          <p class="section-subtitle">
+            I believe true learning happens when theory collides with the workshop table.
+          </p>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-card glass-panel">
+            <div class="card-icon cyan-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+              </svg>
+            </div>
+            <h3>Fundamentals of Producing</h3>
+            <p>
+              Delving deep into manufacturing processes — from additive 3D printing and subtractive PCB CNC milling to mechanical linkages and laser-cut enclosures. Understanding material constraints before designing for them.
+            </p>
+          </div>
+
+          <div class="about-card glass-panel">
+            <div class="card-icon yellow-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="10"></circle>
+                <polygon points="10 8 16 12 10 16 10 8"></polygon>
+              </svg>
+            </div>
+            <h3>Rapid Prototyping</h3>
+            <p>
+              Moving swiftly from quick 2D vector sketches and AI-augmented concept refinement directly into CAD and physical mockups. Testing ergonomics with hand-held physical iterations early.
+            </p>
+          </div>
+
+          <div class="about-card glass-panel">
+            <div class="card-icon purple-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                <line x1="8" y1="21" x2="16" y2="21"></line>
+                <line x1="12" y1="17" x2="12" y2="21"></line>
+              </svg>
+            </div>
+            <h3>Physical Computing</h3>
+            <p>
+              Giving physical objects brains. Connecting microcontrollers to tactile matrices, custom power management circuits, servo actuators, and crisp displays to breathe life into inanimate prototypes.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Projects Section -->
+    <section id="projects" class="section projects-section">
+      <div class="container">
+        
+        <div class="section-header">
+          <span class="section-tag">Featured Projects &bull; Digital Fabrication</span>
+          <h2 class="section-title">What I’m Building</h2>
+          <p class="section-subtitle">
+            Directly from my Week 1 Principles, Practices &amp; Digital Exploration journey.
+          </p>
+        </div>
+
+        <!-- PROJECT 1: POCKET ROCKET (FLAGSHIP) -->
+        <article id="pocket-rocket" class="project-showcase glass-panel flagship-panel">
+          <div class="project-header-bar">
+            <div class="badge-group">
+              <span class="badge badge-flagship">★ Flagship Final Project</span>
+              <span class="badge badge-tech">Handheld Gaming</span>
+              <span class="badge badge-tech">PCB Design</span>
+              <span class="badge badge-tech">3D Printing</span>
+            </div>
+            <span class="project-phase">In Active Development</span>
+          </div>
+
+          <div class="flagship-grid">
+            <!-- Left Info -->
+            <div class="project-content">
+              <h3 class="project-title">Pocket Rocket</h3>
+              <p class="project-tagline">Design &amp; Development of a Compact Handheld Gaming Device</p>
+              
+              <p class="project-desc">
+                A compact, modular handheld gaming device designed for retro and indie arcade-style games. Pocket Rocket combines physical tactile button interactions, a vibrant digital display, and custom-designed electronics housed in an ergonomic dual-tone shell.
+              </p>
+
+              <!-- Miro Sticky Note Quote -->
+              <div class="maker-note yellow-note">
+                <span class="pin">📌</span>
+                <p><strong>Design Note from Miro:</strong> “The concept was integrating 3D modelling/printing with PCB design with a lil code... taking inspiration from prior projects to create my custom mini play device.”</p>
+              </div>
+
+              <!-- Key Architectural Highlights -->
+              <div class="project-specs-list">
+                <div class="spec-item">
+                  <strong>Industrial Design:</strong> Split dual-tone cyan &amp; yellow body, textured grip, rear tabletop kickstand, and lanyard loop.
+                </div>
+                <div class="spec-item">
+                  <strong>Controls &amp; Tactile Feel:</strong> Responsive D-pad, thumbstick rocker, action switches, and low-latency top shoulder triggers.
+                </div>
+                <div class="spec-item">
+                  <strong>Electronics &amp; PCB:</strong> Custom handheld PCB layout integrating microcontrollers, display driver, audio amp, and battery management (BMS).
+                </div>
+                <div class="spec-item">
+                  <strong>Future Modular Scalability:</strong> Expandable bus architecture for swappable game cartridges or wireless link-play.
+                </div>
+              </div>
+
+              <!-- Interactive Tabs for Deep Dive -->
+              <div class="tabs-container">
+                <div class="tab-buttons" role="tablist">
+                  <button class="tab-btn active" data-tab="tab-cad">CAD &amp; Enclosure</button>
+                  <button class="tab-btn" data-tab="tab-pcb">Custom PCB</button>
+                  <button class="tab-btn" data-tab="tab-firmware">Firmware &amp; OS</button>
+                </div>
+                <div class="tab-content">
+                  <div class="tab-pane active" id="tab-cad">
+                    <p>Designed through 4 iterative 2D aspect ratio studies in Miro, testing display proportions, D-pad ergonomics, and travel depth before moving into parametric 3D CAD modeling.</p>
+                  </div>
+                  <div class="tab-pane" id="tab-pcb">
+                    <p>Schematic and board layout tailored for compact integration. Incorporates battery charge protection, step-up voltage regulation, and clean routed traces for tactile switch matrices.</p>
+                  </div>
+                  <div class="tab-pane" id="tab-firmware">
+                    <p>Low-level C/C++ event loop for debounced microswitch reading, SPI-driven frame buffer rendering, and retro game state machines.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Right: Interactive Device Simulator -->
+            <div class="project-interactive-console">
+              <div class="console-wrapper">
+                <div class="console-label-tag">Interactive Preview &bull; Click to Play</div>
+                
+                <!-- Physical Console Representation -->
+                <div class="console-body" id="consoleBody">
+                  <div class="console-speaker-grille">
+                    <span></span><span></span><span></span><span></span>
+                  </div>
+
+                  <!-- LCD Screen Area -->
+                  <div class="console-screen-bezel">
+                    <div class="screen-brand">POCKET ROCKET &bull; 8-BIT</div>
+                    <canvas id="consoleCanvas" width="220" height="150" class="console-screen"></canvas>
+                    <div class="screen-footer">
+                      <span id="gameScore">SCORE: 00</span>
+                      <span id="gameStatus">PRESS START</span>
+                    </div>
+                  </div>
+
+                  <!-- Controls Area -->
+                  <div class="console-controls">
+                    <!-- D-Pad -->
+                    <div class="dpad" id="dpad">
+                      <button class="dpad-btn dpad-up" id="btnUp" aria-label="Up">▲</button>
+                      <button class="dpad-btn dpad-left" id="btnLeft" aria-label="Left">◀</button>
+                      <div class="dpad-center"></div>
+                      <button class="dpad-btn dpad-right" id="btnRight" aria-label="Right">▶</button>
+                      <button class="dpad-btn dpad-down" id="btnDown" aria-label="Down">▼</button>
+                    </div>
+
+                    <!-- Action Buttons -->
+                    <div class="action-buttons">
+                      <button class="action-btn btn-b" id="btnB" aria-label="Button B">
+                        <span>B</span>
+                      </button>
+                      <button class="action-btn btn-a" id="btnA" aria-label="Button A">
+                        <span>A</span>
+                      </button>
+                    </div>
+                  </div>
+
+                  <!-- Start / Reset Bar -->
+                  <div class="console-bottom-bar">
+                    <button class="pill-btn" id="btnResetGame">RESET</button>
+                    <button class="pill-btn" id="btnStartGame">START / JUMP</button>
+                  </div>
+                </div>
+
+                <div class="console-hint">
+                  <span>💡 Tip: Click A / Jump or Spacebar on desktop to play the onboard retro arcade run!</span>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </article>
+
+        <!-- PROJECT 2: GESTULATOR (GESTURE CALCULATOR) -->
+        <article id="gestulator" class="project-showcase glass-panel">
+          <div class="project-header-bar">
+            <div class="badge-group">
+              <span class="badge badge-accent">Kinematics &amp; Animatronics</span>
+              <span class="badge badge-tech">Robotic Hand</span>
+              <span class="badge badge-tech">Servo Linkages</span>
+              <span class="badge badge-tech">Physical Computing</span>
+            </div>
+            <span class="project-phase">Mechanical Prototyping</span>
+          </div>
+
+          <div class="flagship-grid">
+            <!-- Left Info -->
+            <div class="project-content">
+              <h3 class="project-title">GESTULATOR</h3>
+              <p class="project-tagline">The Robotic Hand Gesture Calculator</p>
+              
+              <p class="project-desc">
+                An interactive computing device inspired by animatronics. The Gestulator calculates arithmetic problems via a physical keypad and articulates computed answers through a 5-finger tendon-driven robotic hand using mechanical number gestures (0 through 9).
+              </p>
+
+              <div class="maker-note cyan-note">
+                <span class="pin">💡</span>
+                <p><strong>Origin Story:</strong> “I came up with this being inspired by animatronics. Wanted to make something simple and fun, so I mixed a calculator with an articulated robotic hand!”</p>
+              </div>
+
+              <div class="workflow-chain">
+                <div class="flow-step">
+                  <span class="step-num">01</span>
+                  <span class="step-text">Matrix Keypad Input</span>
+                </div>
+                <div class="flow-arrow">➔</div>
+                <div class="flow-step">
+                  <span class="step-num">02</span>
+                  <span class="step-text">Compute Result</span>
+                </div>
+                <div class="flow-arrow">➔</div>
+                <div class="flow-step">
+                  <span class="step-num">03</span>
+                  <span class="step-text">Sequential Hand Gestures</span>
+                </div>
+                <div class="flow-arrow">➔</div>
+                <div class="flow-step">
+                  <span class="step-num">04</span>
+                  <span class="step-text">LCD Display Readout</span>
+                </div>
+              </div>
+
+              <div class="kinematics-guide">
+                <h4>Kinematic Finger Mapping (0–9)</h4>
+                <div class="gesture-chips">
+                  <span class="g-chip" data-gesture="0">0: Closed Fist</span>
+                  <span class="g-chip" data-gesture="1">1: Index Finger</span>
+                  <span class="g-chip" data-gesture="2">2: Peace Sign</span>
+                  <span class="g-chip" data-gesture="3">3: Three Fingers</span>
+                  <span class="g-chip" data-gesture="4">4: Four Raised</span>
+                  <span class="g-chip" data-gesture="5">5: Open Palm</span>
+                  <span class="g-chip" data-gesture="6">6–9: Kinematic Combos</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Right: Interactive Gestulator Simulator -->
+            <div class="project-interactive-gestulator">
+              <div class="gestulator-simulator-box">
+                <div class="sim-header">
+                  <span>Kinematic Simulator</span>
+                  <span id="handStatusBadge" class="status-live">IDLE</span>
+                </div>
+
+                <!-- Animated SVG Robotic Hand Representation -->
+                <div class="hand-display-container">
+                  <svg id="roboticHandSvg" viewBox="0 0 300 320" class="robotic-hand-svg">
+                    <!-- Base / Wrist -->
+                    <rect x="100" y="250" width="100" height="60" rx="8" class="hand-base" />
+                    <text x="150" y="285" text-anchor="middle" class="hand-label">SERVO CLUSTER</text>
+                    
+                    <!-- Palm -->
+                    <polygon points="85,250 215,250 225,160 75,160" class="hand-palm" />
+                    <circle cx="150" cy="205" r="16" class="palm-core" />
+                    
+                    <!-- Thumb (Articulated) -->
+                    <g id="fingerThumb" class="finger-group" transform-origin="80 210">
+                      <rect x="40" y="195" width="45" height="18" rx="6" class="finger-segment" />
+                      <circle cx="80" cy="204" r="6" class="finger-joint" />
+                    </g>
+
+                    <!-- Index Finger -->
+                    <g id="fingerIndex" class="finger-group" transform-origin="105 160">
+                      <rect x="96" y="70" width="18" height="90" rx="9" class="finger-segment" />
+                      <circle cx="105" cy="160" r="5" class="finger-joint" />
+                      <circle cx="105" cy="115" r="4" class="finger-joint" />
+                    </g>
+
+                    <!-- Middle Finger -->
+                    <g id="fingerMiddle" class="finger-group" transform-origin="135 160">
+                      <rect x="126" y="55" width="18" height="105" rx="9" class="finger-segment" />
+                      <circle cx="135" cy="160" r="5" class="finger-joint" />
+                      <circle cx="135" cy="105" r="4" class="finger-joint" />
+                    </g>
+
+                    <!-- Ring Finger -->
+                    <g id="fingerRing" class="finger-group" transform-origin="165 160">
+                      <rect x="156" y="72" width="18" height="88" rx="9" class="finger-segment" />
+                      <circle cx="165" cy="160" r="5" class="finger-joint" />
+                      <circle cx="165" cy="118" r="4" class="finger-joint" />
+                    </g>
+
+                    <!-- Pinky Finger -->
+                    <g id="fingerPinky" class="finger-group" transform-origin="195 165">
+                      <rect x="186" y="95" width="18" height="70" rx="9" class="finger-segment" />
+                      <circle cx="195" cy="165" r="5" class="finger-joint" />
+                      <circle cx="195" cy="130" r="4" class="finger-joint" />
+                    </g>
+                  </svg>
+
+                  <div class="current-gesture-overlay">
+                    <span class="gesture-label">Current Pose:</span>
+                    <span id="currentPoseName" class="pose-name">OPEN PALM (5)</span>
+                  </div>
+                </div>
+
+                <!-- Interactive Calculator Matrix -->
+                <div class="calculator-unit">
+                  <div class="calc-screen">
+                    <div id="calcFormula" class="calc-formula">Enter equation...</div>
+                    <div id="calcValue" class="calc-value">0</div>
+                  </div>
+
+                  <div class="calc-keypad">
+                    <button class="calc-key" data-key="C">C</button>
+                    <button class="calc-key" data-key="(">(</button>
+                    <button class="calc-key" data-key=")">)</button>
+                    <button class="calc-key calc-op" data-key="/">÷</button>
+                    
+                    <button class="calc-key" data-key="7">7</button>
+                    <button class="calc-key" data-key="8">8</button>
+                    <button class="calc-key" data-key="9">9</button>
+                    <button class="calc-key calc-op" data-key="*">×</button>
+                    
+                    <button class="calc-key" data-key="4">4</button>
+                    <button class="calc-key" data-key="5">5</button>
+                    <button class="calc-key" data-key="6">6</button>
+                    <button class="calc-key calc-op" data-key="-">-</button>
+                    
+                    <button class="calc-key" data-key="1">1</button>
+                    <button class="calc-key" data-key="2">2</button>
+                    <button class="calc-key" data-key="3">3</button>
+                    <button class="calc-key calc-op" data-key="+">+</button>
+                    
+                    <button class="calc-key" data-key="0">0</button>
+                    <button class="calc-key" data-key=".">.</button>
+                    <button class="calc-key calc-equal" data-key="=">=</button>
+                  </div>
+
+                  <div class="calc-quick-actions">
+                    <button class="btn btn-xs btn-outline" id="btnDemoCalc">Run Demo (234 + 1111 = 1345)</button>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+          </div>
+        </article>
+
+        <!-- SECONDARY PROJECTS GRID -->
+        <div class="secondary-projects-grid">
+          
+          <!-- PROJECT 3: KINETIC CLOCK -->
+          <div class="project-mini-card glass-panel">
+            <div class="mini-card-header">
+              <span class="badge badge-accent">Kinetic Sculpture</span>
+              <span class="mini-phase">Exploration</span>
+            </div>
+            <h3>Kinetic Clock</h3>
+            <p class="mini-tagline">A mechanical interpretation of digital time</p>
+            <p class="mini-desc">
+              A sculptural digital clock where hours and minutes are displayed using individual physical relief segments that mechanically actuate, rotate, or rise to compose 7-segment numbers.
+            </p>
+            
+            <!-- Live Kinetic 7-Segment Clock Display -->
+            <div class="kinetic-clock-widget">
+              <div class="clock-digits" id="kineticClockDisplay">
+                <span class="clock-num" id="clkH1">1</span>
+                <span class="clock-num" id="clkH2">2</span>
+                <span class="clock-colon">:</span>
+                <span class="clock-num" id="clkM1">2</span>
+                <span class="clock-num" id="clkM2">9</span>
+                <span class="clock-colon">:</span>
+                <span class="clock-num" id="clkS1">0</span>
+                <span class="clock-num" id="clkS2">0</span>
+              </div>
+              <span class="clock-sub">Physical Relief Segment Actuation Mockup</span>
+            </div>
+
+            <div class="mini-meta">
+              <span>Mechanical Cam Wheels</span> &bull; <span>Linear Actuators</span> &bull; <span>Sculptural Form</span>
+            </div>
+          </div>
+
+          <!-- PROJECT 4: CRUX BOARD (R&D EVOLUTION) -->
+          <div class="project-mini-card glass-panel">
+            <div class="mini-card-header">
+              <span class="badge badge-neutral">R&amp;D Iteration</span>
+              <span class="mini-phase">Lessons Learned</span>
+            </div>
+            <h3>Crux Board</h3>
+            <p class="mini-tagline">Portable Climber Training Tool &amp; Multi-bar Linkage</p>
+            <p class="mini-desc">
+              Explored a compact, portable warm-up hangboard for rock climbers utilizing multi-bar folding linkage geometries (tested from Stage 1A to 5A), inspired by 3-in-1 pull-up bars. 
+            </p>
+            
+            <div class="rd-insight-box">
+              <strong>Honest Engineering Evolution:</strong>
+              <p>Prototyped brackets, wood mountings, and linkage load paths. Iterated and paused to direct focused energy into the Pocket Rocket &amp; Gestulator electronics fabrication.</p>
+            </div>
+
+            <div class="mini-meta">
+              <span>Linkage Kinematics</span> &bull; <span>Ergonomic Loads</span> &bull; <span>Material Stress</span>
+            </div>
+          </div>
+
+          <!-- PROJECT 5: FLICKER GLASSES -->
+          <div class="project-mini-card glass-panel">
+            <div class="mini-card-header">
+              <span class="badge badge-accent">Optical Exploration</span>
+              <span class="mini-phase">Concept Initialized</span>
+            </div>
+            <h3>Flicker Glasses</h3>
+            <p class="mini-tagline">Visual Frequency &amp; Optical Shutter Studies</p>
+            <p class="mini-desc">
+              Investigating liquid crystal optical shutter control and stroboscopic frequency visual perception for athletic focus training and depth vision experiments.
+            </p>
+            
+            <div class="strobe-widget">
+              <div class="strobe-lens">
+                <div class="lens-glow"></div>
+                <span>OPTICAL SHUTTER</span>
+              </div>
+            </div>
+
+            <div class="mini-meta">
+              <span>Optoelectronics</span> &bull; <span>PWM Frequency</span> &bull; <span>Wearable Rig</span>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Digital Exploration & Course Documentation (Week 1 and Beyond) -->
+    <section id="exploration" class="section exploration-section">
+      <div class="container">
+        
+        <div class="section-header">
+          <span class="section-tag">Logbook &bull; Principles &amp; Practices</span>
+          <h2 class="section-title">Digital Exploration Timeline</h2>
+          <p class="section-subtitle">
+            Documenting the weekly milestones, design thoughts, and workshop trials.
+          </p>
+        </div>
+
+        <div class="timeline">
+          <!-- Week 1 -->
+          <div class="timeline-item active-week">
+            <div class="timeline-marker">
+              <span>W01</span>
+            </div>
+            <div class="timeline-content glass-panel">
+              <div class="timeline-header">
+                <div>
+                  <span class="timeline-date">January 14, 2026</span>
+                  <h3 class="timeline-title">Week 1: Principles, Practices &amp; Digital Exploration</h3>
+                </div>
+                <a href="https://brick-era-0b8.notion.site/Week-1-Principles-Practices-Digital-Exploration-41c4243c7bad806cad31f09661c93367" target="_blank" rel="noopener" class="chip chip-cyan link-chip">
+                  <span>Open Notion Page</span>
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="7" y1="17" x2="17" y2="7"></line>
+                    <polyline points="7 7 17 7 17 17"></polyline>
+                  </svg>
+                </a>
+              </div>
+
+              <div class="timeline-body">
+                <p>
+                  Established the foundational project directory and ideated 3 core physical concepts: <strong>Gestulator</strong>, <strong>Pocket Rocket</strong>, and <strong>Flicker Glasses</strong>.
+                </p>
+
+                <div class="exploration-highlights">
+                  <div class="highlight-pill">
+                    <span class="bullet">&bull;</span>
+                    <strong>Miro Collaborative Board:</strong> Mapped mood boards, 2D vector ergonomics, and initial design sketches.
+                  </div>
+                  <div class="highlight-pill">
+                    <span class="bullet">&bull;</span>
+                    <strong>Selected Final Project:</strong> Pocket Rocket Handheld Game Box chosen for full digital fabrication cycle.
+                  </div>
+                  <div class="highlight-pill">
+                    <span class="bullet">&bull;</span>
+                    <strong>Version Control &amp; Portfolio:</strong> Setting up personal web presence to reflect and track fabrication logs.
+                  </div>
+                </div>
+
+                <div class="timeline-quote">
+                  <em>“I came up with ideas inspired by animatronics and retro arcade gaming, mixing physical controls with custom electronics.”</em>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Upcoming Weeks Roadmap -->
+          <div class="timeline-item future-week">
+            <div class="timeline-marker">
+              <span>W02+</span>
+            </div>
+            <div class="timeline-content glass-panel future-card">
+              <div class="timeline-header">
+                <div>
+                  <span class="timeline-date">Upcoming Milestones</span>
+                  <h3 class="timeline-title">CAD, Subtractive Fabrication, Embedded Programming</h3>
+                </div>
+                <span class="badge badge-neutral">Roadmap</span>
+              </div>
+              <p>
+                Subsequent modules will detail 3D parametric enclosures, custom single-layer PCB milling, surface-mount soldering, and sensor/actuator integration for the Pocket Rocket and Gestulator.
+              </p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Toolbox & Skills Matrix Section -->
+    <section id="toolbox" class="section toolbox-section">
+      <div class="container">
+        
+        <div class="section-header">
+          <span class="section-tag">Skills &bull; Tools &bull; Methodologies</span>
+          <h2 class="section-title">My Prototyping Toolbox</h2>
+          <p class="section-subtitle">
+            The multi-disciplinary toolkit I use to bring prototypes from napkin to bench.
+          </p>
+        </div>
+
+        <div class="toolbox-grid">
+          
+          <div class="tool-column glass-panel">
+            <div class="column-header">
+              <div class="col-icon cyan-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path>
+                </svg>
+              </div>
+              <h3>CAD &amp; Digital Fabrication</h3>
+            </div>
+            <ul class="skills-list">
+              <li>
+                <div class="skill-name">Fusion 360 / 3D Parametric CAD</div>
+                <div class="skill-meter"><div class="fill" style="width: 85%;"></div></div>
+              </li>
+              <li>
+                <div class="skill-name">Additive 3D Printing (FDM/Resin)</div>
+                <div class="skill-meter"><div class="fill" style="width: 90%;"></div></div>
+              </li>
+              <li>
+                <div class="skill-name">Tendon &amp; Linkage Kinematics</div>
+                <div class="skill-meter"><div class="fill" style="width: 75%;"></div></div>
+              </li>
+              <li>
+                <div class="skill-name">Laser Cutting &amp; Sheet Materials</div>
+                <div class="skill-meter"><div class="fill" style="width: 80%;"></div></div>
+              </li>
+            </ul>
+          </div>
+
+          <div class="tool-column glass-panel">
+            <div class="column-header">
+              <div class="col-icon yellow-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect x="4" y="4" width="16" height="16" rx="2"></rect>
+                  <rect x="9" y="9" width="6" height="6"></rect>
+                  <line x1="9" y1="1" x2="9" y2="4"></line>
+                  <line x1="15" y1="1" x2="15" y2="4"></line>
+                  <line x1="9" y1="20" x2="9" y2="23"></line>
+                  <line x1="15" y1="20" x2="15" y2="23"></line>
+                  <line x1="20" y1="9" x2="23" y2="9"></line>
+                  <line x1="20" y1="14" x2="23" y2="14"></line>
+                  <line x1="1" y1="9" x2="4" y2="9"></line>
+                  <line x1="1" y1="14" x2="4" y2="14"></line>
+                </svg>
+              </div>
+              <h3>Electronics &amp; Embedded</h3>
+            </div>
+            <ul class="skills-list">
+              <li>
+                <div class="skill-name">Custom PCB Layout &amp; Routing</div>
+                <div class="skill-meter"><div class="fill" style="width: 78%;"></div></div>
+              </li>
+              <li>
+                <div class="skill-name">Microcontrollers (ESP32/RP2040)</div>
+                <div class="skill-meter"><div class="fill" style="width: 82%;"></div></div>
+              </li>
+              <li>
+                <div class="skill-name">Servo Motion &amp; Motor Control</div>
+                <div class="skill-meter"><div class="fill" style="width: 85%;"></div></div>
+              </li>
+              <li>
+                <div class="skill-name">Battery Management (BMS) &amp; Power</div>
+                <div class="skill-meter"><div class="fill" style="width: 70%;"></div></div>
+              </li>
+            </ul>
+          </div>
+
+          <div class="tool-column glass-panel">
+            <div class="column-header">
+              <div class="col-icon purple-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                </svg>
+              </div>
+              <h3>Ideation &amp; Software</h3>
+            </div>
+            <ul class="skills-list">
+              <li>
+                <div class="skill-name">Miro Ergonomic Studies &amp; Moodboards</div>
+                <div class="skill-meter"><div class="fill" style="width: 95%;"></div></div>
+              </li>
+              <li>
+                <div class="skill-name">C / C++ Embedded Firmware</div>
+                <div class="skill-meter"><div class="fill" style="width: 80%;"></div></div>
+              </li>
+              <li>
+                <div class="skill-name">AI-Assisted Design Exploration</div>
+                <div class="skill-meter"><div class="fill" style="width: 90%;"></div></div>
+              </li>
+              <li>
+                <div class="skill-name">Physical Interaction Prototyping</div>
+                <div class="skill-meter"><div class="fill" style="width: 85%;"></div></div>
+              </li>
+            </ul>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Connect & Contact Section -->
+    <section id="contact" class="section contact-section">
+      <div class="container">
+        
+        <div class="contact-box glass-panel">
+          <div class="contact-content">
+            <span class="section-tag">Let's Connect</span>
+            <h2 class="contact-title">Interested in building or collaborating?</h2>
+            <p class="contact-lead">
+              Whether you want to discuss kinematic robotic hands, handheld gaming hardware, or swap prototyping stories — I’d love to connect!
+            </p>
+            
+            <div class="contact-links">
+              <a href="mailto:sarfarazhussainzaidi@gmail.com" class="contact-pill" id="emailPill" title="Click to copy email">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                  <polyline points="22,6 12,13 2,6"></polyline>
+                </svg>
+                <span id="emailText">sarfarazhussainzaidi@gmail.com</span>
+                <span class="copy-badge" id="copyBadge">Copy</span>
+              </a>
+
+              <a href="https://brick-era-0b8.notion.site/Week-1-Principles-Practices-Digital-Exploration-41c4243c7bad806cad31f09661c93367" target="_blank" rel="noopener" class="contact-pill">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+                  <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
+                </svg>
+                <span>Notion Workspace</span>
+              </a>
+
+              <a href="https://miro.com/app/live-embed/uXjVEM5DdSE=/?share_link_id=177709263757" target="_blank" rel="noopener" class="contact-pill">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect x="3" y="3" width="7" height="7"></rect>
+                  <rect x="14" y="3" width="7" height="7"></rect>
+                  <rect x="14" y="14" width="7" height="7"></rect>
+                  <rect x="3" y="14" width="7" height="7"></rect>
+                </svg>
+                <span>Miro Canvas</span>
+              </a>
+            </div>
+          </div>
+
+          <div class="contact-decor">
+            <div class="decor-card">
+              <span class="decor-quote">“I go back home and work on my ideas.”</span>
+              <span class="decor-sign">— Syed Sarfaraz Hussain Zaidi</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <div class="footer-left">
+        <p class="footer-brand"><strong>Sarfaraz &bull; D-lite</strong></p>
+        <p class="footer-copy">&copy; 2026 Syed Sarfaraz Hussain Zaidi. Handcrafted with passion for design &amp; prototyping.</p>
+      </div>
+      <div class="footer-right">
+        <a href="#hero" class="btn-back-top">
+          <span>Back to Top</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <polyline points="18 15 12 9 6 15"></polyline>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="app.js"></script>
+</body>
+</html>
